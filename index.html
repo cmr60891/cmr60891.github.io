@@ -26,7 +26,7 @@ th, td {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    bottom: 100%;
+    top: 5%;
     left: 50%;
     margin-left: -60px;
 }
@@ -34,39 +34,57 @@ th, td {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-.mypicture {
+.container {
     position: relative;
-    display: block;
 }
 
-.mypicture .mypicturetext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 90%;
-    margin-left: -60px;
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.mypicture:hover .mypicturetext {
-    visibility: visible;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #336633;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 </style>
 </HEAD>	
 	<Body STYLE="background-color:#CCFFFF">
 	
 	<div STYLE="text-align:center">
-		<H1>Hiking the Appalachian Trail</h1><div><img src="https://s-media-cache-ak0.pinimg.com/564x/cc/6f/88/cc6f884894963e920c7fb866a0ddccce.jpg" alt="AT symbol" style="width:50px;height:50px"></div>
+		<H1>Hiking the Appalachian Trail</h1>
+			<div><img src="https://s-media-cache-ak0.pinimg.com/564x/cc/6f/88/cc6f884894963e920c7fb866a0ddccce.jpg" alt="AT symbol" style="width:50px;height:50px"></div>
+	<div class="container">
+	<img src="https://preview.ibb.co/etVGwF/IMG_2847.jpg" alt="Camping Picture" style="float:right;width:296px;height:296px" class="image">
+		<div class="middle">
+			<div class="text">My First Time Hiking Panther Creek Falls!</div>
+		</div>
 	</div>
-	<div class="mypicture"><img src="https://preview.ibb.co/etVGwF/IMG_2847.jpg" alt="Camping Picture" style="float:right;width:296px;height:296px"><span class="mypicturetext">Before My First Time Hiking Panther Creek Falls</span></div>	
+	</div>
 		<p STYLE="font-size:20px;text-indent: 40px">My name is Collin Roberts. I am a freshman intended finance major at the University of Georgia. Although my major is finance, I have always had a passion for nature. This passion has led me to make one major goal of life before I die: <b>to hike the Appalachian trail.</b> The Appalachian Trail is a 2,200 mile long marked hiking trail that passes through 14 states, starting in Georgia and ending in Maine. This trail was constructed in 1937 to be a weekend-getaway spot from busy cities for families. Since then, it has commonly been used by thru-hikers who intend to hike the trail from start to finish. </p>
 		<p STYLE="font-size:20px;text-indent: 40px">I want to hike the entire Appalachian Trail for a few reasons. First, I want to experience the beauty and nature present along the trail. From lush forests full of wildlife to barren mountaintops, the trail is full of unmatched views. Second, I want to experience a life outside of the typical “Nine to Five” life. I know my future will probably consist of working eight hours a day, and I would like to live at some point of my life without a strict schedule. Last and most importantly, I want to hike the entire Appalachian Trail because I can. Most people feel they can’t do the things they want to because they “don’t have the time.” The way I see it, if I want to hike the Appalachian Trail and have the opportunity, it would be wrong not to.</p>
 		<p STYLE="font-size:20px;text-indent: 40px">Hiking the Appalachian Trail would likely take me six to seven months. I plan on starting the February after I graduate and ending in September. This means I would have to average around fifteen to twenty miles of hiking per day with the occasion rest day, also known on the trail as a "zero day". Most of my zero days will take place in towns that I will pass through which are usually around five days of hiking apart. When I pass through towns I will likely sleep in hostels rather than sleeping in shelters placed along the trail. This means I will plan on carrying six days worth of food with me at all times (one extra day for emergencies) and restock once I hit a town. One way of restocking is through mail drops in which friends can send food in advance to a post office which will hold the food until I arrive. I will try to stay <i>ultralight</i> by packing little more than <a href="https://www.rei.com/learn/expert-advice/ten-essentials.html">the ten essentials</a>. With nothing more than what I can carry on my back, a determined mindset, and supportive friends, I will attempt a journey of a lifetime hiking the Appalachian Trail. </p>
